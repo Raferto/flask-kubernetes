@@ -39,7 +39,8 @@ The API can only be used if the proper database and schemas are set. This can be
 2. Create the database and table
    1. `CREATE DATABASE phonebook;`
     2. `USE phonebook;`
-    3. ```
+    3. 
+    ```
     CREATE TABLE `phonebook` (
       `id` varchar(50) NOT NULL,
       `nama` varchar(50) NOT NULL,
@@ -52,4 +53,4 @@ The API can only be used if the proper database and schemas are set. This can be
     ```
     
 ## Expose the API
-The API can be accessed by exposing it using minikube: `minikube service flask-service`. This will return a `URL`. If you paste this to your browser you will see the `hello world` message. You can use this `service_URL` to make requests to the `API`
+The API can be accessed by exposing it using minikube: `minikube service flask-service`. This will return a `URL`. If you paste this to your browser you will see the flask app api.
