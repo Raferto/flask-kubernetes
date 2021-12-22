@@ -1,0 +1,19 @@
+untuk melihat daftar phonebook
+ curl -X GET http://localhost:32000/phones
+
+untuk membuat record di phonebook
+  curl -X POST http://localhost:32000/phones  \
+  -d '{"nama": "Edinson Cavani", "alamat" : "Uruguay", "notelp": "781723"}' \
+  -H "Content-Type: application/json" \
+
+untuk mendapatkan detail record dengan berbasis id
+ curl -X GET http://localhost:32000/phones/91f4c22c-627a-11ec-9000-40b0760a0427
+
+untuk menghapus record dengan berbasis id
+ curl -X DELETE http://localhost:32000/phones/fe437958-2fa4-11eb-bf35-7fc0bd24c845
+
+unutk mengupdate record dengan berbasis id
+  curl -X PUT http://localhost:32000/phones/91f4c22c-627a-11ec-9000-40b0760a0427 \
+  -H 'Content-type: application/json' \
+  -d '{"nama": "Bruno Fernandes"}'
+
