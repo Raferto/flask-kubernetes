@@ -5,11 +5,11 @@ import pymysql
 class PhoneBook:
     def __init__(self):
         self.db = pymysql.connect(
-            host=os.getenv("MYSQL_SERVICE_HOST"),
+            host='34.67.9.205',
             user='root',
-            password=os.getenv("db_root_password"),
-            db=os.getenv("db_name"),
-            port=int(os.getenv("MYSQL_SERVICE_PORT")),
+            password='admin123',
+            db='phonebookdb',
+            port=3306,
         )
         self.cur = self.db.cursor()
         
